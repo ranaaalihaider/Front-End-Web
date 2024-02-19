@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{background-color: black;
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
+
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        #header{
+            width: 100%;
+        }
+        #footer{
+            width: 100%;
+            margin-top: 30px;
+        }
+        #heading{font-size:11mm;
+            padding-bottom: 5px;
+            text-align: center;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        #heading-paragraph{
+            padding-bottom: 5px;
+            text-align: center;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        #popular-downloads{
+
+            grid-column-start: 1;
+            grid-column-end: 5;
+            color: white;
+            text-align: center;
+            padding-bottom:2px ;
+            font-size: x-large;
+        }
+        #star{color: green;}
+        hr{margin-bottom: 10px; border: 2px solid white;}
+        #movies{
+            width: 130px;
+            border: 4px solid white;
+        }
+        #names{
+            margin-top: 4px;
+            margin-bottom: 4px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        #year{
+            color: rgb(151, 151, 151);
+        }
+        #quality{
+            padding-top: 10px;
+            color: rgb(131, 131, 131);
+        }
+        #middle{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            width: 90%;
+            height: 200px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #middle_instruction{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            margin-right: 10%;
+        }
+        #torrents{
+            margin-right: 60%;
+
+            color: white;
+        }
+        #preview{
+            color: white;
+        }
+        #bottom-line{
+            background-color: rgb(43, 43, 43);
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #upcoming{
+            background-color: rgb(43, 43, 43);
+            padding-right: 50%;
+            
+        }
+        #recently{
+            background-color: rgb(43, 43, 43);
+            margin-right: 10%;
+        }
+    </style>
+    <head>
+        <div>
+            <img src="header.png" alt="" id="header">
+        </div>
+    </head>
+    <main>
+        <div class="container">
+            <h1 id="heading">Download YTS YIFY movies: HD Smallest size</h1>
+            <p id="heading-paragraph">Welcome to the official YTS.MX website.
+                Here you can browse and download YIFY movies in excellent
+                <br>
+                720p,1080p, 2160p 4K and 3D quality, all at the smallest file size. YTS Movies Torrents.</p>
+                <span id="popular-downloads">
+                    <p> <b id="star">&#9733;</b> Popular Downloads</p>
+                    <hr style="margin-top: 20px;">
+                </span>
+                <img id="movies" src="dragon.jpg" alt="">
+                <img id="movies" src="escape room.jpg" alt="">
+                <img id="movies" src="glass.jpg" alt="">
+                <img id="movies" src="mortal engines.jpg" alt="">
+                <label id="names">Dragon</label>
+                <label id="names">Escape Room</label>
+                <label id="names">Glass</label>
+                <label id="names">Mortal Engines</label>
+                <label id="year">2018</label>
+                <label id="year">2018</label>
+                <label id="year">2018</label>
+                <label id="year">2018</label>
+                <label id="quality">720p 1080p</label>
+                <label id="quality">720p 1080p HD</label>
+                <label id="quality">720p 1080p HD</label>
+                <label id="quality">720p 1080p</label>
+                <!-- middle warning picture -->
+                <p id="middle_instruction"> 
+                    <b id="torrents">Latest YIFY Movies Torrents</b> <b id="preview"> Preview All</b>
+                </p>
+                <img src="middle.png" alt="" id="middle">
+
+                    <!-- Next Page Images -->
+                    <img src="trouble.jpg" alt="" id="movies">
+                    <img src="thekite.jpg" alt="" id="movies">
+                    <img src="highLife.jpg" alt="" id="movies">
+                    <img src="storm.jpg" alt="" id="movies">
+                    <label id="names">Trouble in Wind</label>
+                    <label id="names">The Kite Runner</label>
+                    <label id="names">High Life</label>
+                    <label id="names">Storm Boy</label>
+                    <label id="year">2018</label>
+                    <label id="year">2017</label>
+                    <label id="year">2015</label>
+                    <label id="year">2012</label>
+                    <label id="quality">720p 1080p</label>
+                    <label id="quality">1080p HD</label>
+                    <label id="quality">720p 1080p HD</label>
+                    <label id="quality">720p 1080p</label>
+
+                    <!-- half part of 2nd page -->
+                    <img src="ultimate.jpg" alt="" id="movies">
+                    <img src="thesecret.jpg" alt="" id="movies">
+                    <img src="embrace.jpg" alt="" id="movies">
+                    <img src="dolphins.jpg" alt="" id="movies">
+                    <label id="names">ultimate Avengers</label>
+                    <label id="names">The Secret</label>
+                    <label id="names">Embrace</label>
+                    <label id="names">Dolphins</label>
+                    <label id="year">2020</label>
+                    <label id="year">2017</label>
+                    <label id="year">2018</label>
+                    <label id="year">2020</label>
+                    <label id="quality">720p 1080p</label>
+                    <label id="quality">1080p HD</label>
+                    <label id="quality">720p 1080p HD</label>
+                    <label id="quality">720p 1080p</label>
+                    <span id="bottom-line"><b id="upcoming">Upcoming YIFY Movies</b> <b id="recently">Recently Watched</b></span>
+                    
+                    <!-- last line of movies -->
+
+                    <img src="backdraft.jpg" alt="" id="movies">
+                    <img src="dolphins.jpg" alt="" id="movies">
+                    <img src="moneytrain.jpg" alt="" id="movies">
+                    <img src="watership down.jpg" alt="" id="movies">
+                    <label id="names">Backdraft</label>
+                    <label id="names">Dolphin</label>
+                    <label id="names">Money Train</label>
+                    <label id="names">Watership Down </label>
+                    <label id="year">2020</label>
+                    <label id="year">2018</label>
+                    <label id="year">2017</label>
+                    <label id="year">2020</label>
+                    <label id="quality">1080p HD</label>
+                    <label id="quality">720p 1080p</label>
+                    <label id="quality">720p 1080p HD</label>
+                    <label id="quality">720p 1080p</label>
+
+        </div>
+
+    </main>
+    <footer>
+        <div>
+            <img src="footer.png" alt="" id="footer">
+        </div>
+    </footer>
+</body>
+</html>
